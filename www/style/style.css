@@ -1,0 +1,363 @@
+
+@charset windows-1251;
+* {
+	margin: 0;
+	padding: 0;
+	
+
+}
+/*  General CSS  */
+body{
+    background: #fff;
+}
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5 ,h6{
+    color: #626262;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6          { font-weight: bolder }
+
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+ 
+.clearfix {  
+    *zoom: 1;  
+}
+
+
+
+html{
+	height: 100%
+}
+body{
+	margin: 0 5px;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	font-family:  "Segoe UI", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 135%;
+	float: left;
+}
+a{
+	text-decoration: none;
+
+}
+ul{list-style: none;}
+p{padding: 0 0 0;}
+td {padding: 0px 0px 0px;}
+.clear{
+	clear: both;
+}
+
+
+
+
+.header {
+	width: 100%;
+	height: 100px;
+    position: relative;
+	
+	margin: 0 auto; 
+	float: left;
+	
+	background: rgba(28, 54, 85, .2); 
+}
+
+.header .logo{
+	margin: 20px ;
+    float: left;
+  
+}
+
+.nav{
+	 float: right;
+   
+}
+.nav li{
+		float: left; 
+}
+.nav li a,
+#touch-menu:hover{
+	display: block;
+	padding: 40px 15px;
+	font-weight: bold;
+	font-size: 20px;
+    color: #FFFFFF;
+}
+.nav li a:hover,
+#touch-menu{
+	color: #FFFFFF;
+}
+#touch-menu{display: none;}
+
+.hero{
+ width: 100%;
+    height: 900px; 
+    position: relative;
+    background: url('../images/log.jpg') no-repeat bottom center;
+    background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover; 
+}
+
+.hero .caption{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-top: -265px;
+    z-index: 10;
+}
+
+.hero .caption h2{
+    color: #fff;
+    font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
+    font-size: 100px;
+    font-weight: lighter;
+    margin: 0;
+    position: relative;
+    display: block;
+}
+
+
+@media (max-width: 1000px){
+
+	.header{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100px;
+	}
+	.logo img{height: 40px;}
+	.nav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		display: none;}
+	.nav li {float: none;}
+
+	.nav li a {
+		color: #666;
+		border-top: 1px solid #eee;
+		border-left: 3px solid transparent;
+		background: #fff;
+	}
+	.nav li:first-child a {border-top: none;}
+	.nav li a:hover {
+		color: #333;
+		border-left: 3px solid #515572;
+		background: #f0f0f0;
+	}
+	#touch-menu{
+		display: block;
+		float: right;
+		font-size: 25px;
+		height: 50px;
+		padding: 45px 15px;
+		margin: -10px 0;
+	}
+	.project_list .project_item{
+        width: 100%;
+       text-align: center;
+    }
+
+  
+}
+
+
+.description{
+	padding: 30px;
+	box-sizing: border-box;
+  }
+ .company_text img{
+ 	width: 460px;
+ 	max-width: 100%;
+ 	padding-right:  30px;
+	box-sizing: border-box;
+
+ }
+ .company_text{
+ 	font-size: 18px;
+ }
+  .company_text h1{
+  	text-align: center;
+  	font-weight: bold;
+  	font-style: italic;
+  	text-decoration:  blink;
+  	padding-bottom: 10px;
+  }
+  .company_text .text1, 
+  .company_text .text2 {
+  	font-style: italic;
+  	text-indent: 1.5em; Отступ первой строки
+    text-align: justify; Выравнивание по ширине
+    padding-bottom: 10px;
+  }
+  .company_text .text3{
+  	text-indent: 1.5em; Отступ первой строки
+  	text-align: justify;
+  }
+  .company_text .text4{
+  	font-weight: bold;
+  	font-style: italic;
+  	text-indent: 1.5em; Отступ первой строки
+  	text-align: justify;
+  	padding-top: 10px;
+  	font-size: 20px;
+  }
+  .first  {
+list-style: none;
+padding: 20px 60px;
+}
+.first li {
+padding: 5px 40px;
+border: 4px inset;
+border-color: #3CB371 #2E8B57 #2E8B57  #3CB371 ;
+font-size: 20px;
+box-shadow: 0 5px 5px 0 rgba(0,0,0, .2); 
+margin-bottom: 5px;
+width: 60%;
+}
+.company_text .text5{
+text-indent: 1.5em; Отступ первой строки
+  	text-align: justify;
+  	margin-bottom: 30px;
+}
+/* .container{
+  padding-bottom: 50px
+}  */
+.project   {
+margin-top: 50px;
+text-align: center;
+text-decoration-color: black;
+}
+.project h1 a{
+  color: #000000;
+}
+.project_list{
+  overflow: hidden;
+  display: flex;
+  display: inline;
+
+}
+.project_item {
+
+     float: left;
+
+    width: 33.33334%;
+    text-align: center;
+    padding: 25px 10px; 
+    box-sizing: border-box;
+    
+    
+}
+.project_image img {
+    
+   margin-right: -15px;
+    margin-bottom: -10px;
+    width:400px;
+   height:250px;
+    max-width: 100%;
+    max-height: 100%;
+
+
+   
+}
+.project_text{
+   float:left;
+    padding:15px 0 10px 0;
+    font:16px "HeliosCond";
+    color:#000;
+    width:50%;
+}
+.style_line hr {
+    border: 2px;
+    height: 3px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+.container .more_listing{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    margin: 84px 0 22px 0;
+}
+
+.container .more_listing_btn{
+    text-decoration: none;
+    padding: 10px 40px;
+    border: 2px solid #3CB371;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: black;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+#contact{
+  padding-top: 20px;
+}
+
+
+
+/* .news {
+margin-top: 50px;
+text-align: center;
+text-decoration-color: black;
+}
+.news h1 a{
+
+  color: #000000;
+}
+ */
+
+.footer {
+	position: relative;
+	width: 98%;
+	margin:  auto;
+	margin-top: 30px;
+	float: left;
+	padding: 1%;
+	background-color: black;
+	border-bottom: 2px solid silver;
+	color: white;
+}
+.footer a{
+	color: #FFFFFF;
+}
