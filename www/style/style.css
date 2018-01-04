@@ -7,15 +7,7 @@
 
 }
 /*  General CSS  */
-body{
-    background: #fff;
-}
 
-.wrapper{
-    max-width: 1100px;
-    margin: 0 auto;
-    position: relative;
-}
 
 h1, h2, h3, h4, h5 ,h6{
     color: #626262;
@@ -50,14 +42,14 @@ html{
 	height: 100%
 }
 body{
-	margin: 0 5px;
-	width: 100%;
-	height: 100%;
-	background-color: #fff;
-	font-family:  "Segoe UI", Arial, sans-serif;
-	font-size: 1em;
-	line-height: 135%;
-	float: left;
+  margin: 0 5px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  font-family:  "Segoe UI", Arial, sans-serif;
+  font-size: 1em;
+  line-height: 135%;
+  float: left;
 }
 a{
 	text-decoration: none;
@@ -70,124 +62,48 @@ td {padding: 0px 0px 0px;}
 	clear: both;
 }
 
-
-
-
-.header {
-	width: 100%;
-	height: 100px;
-    position: relative;
-	
-	margin: 0 auto; 
-	float: left;
-	
-	background: rgba(28, 54, 85, .2); 
+#custom-bootstrap-menu.navbar-default {
+    padding: 25px 15px;
+    font-size: 20px;
+    background: rgba(28, 54, 85, .2);
+    height: 100px; 
+    border-width: 0px; 
+    border-radius: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
 }
 
-.header .logo{
-	margin: 20px ;
-    float: left;
-  
-}
-
-.nav{
-	 float: right;
-   
-}
-.nav li{
-		float: left; 
-}
-.nav li a,
-#touch-menu:hover{
-	display: block;
-	padding: 40px 15px;
-	font-weight: bold;
-	font-size: 20px;
-    color: #FFFFFF;
-}
-.nav li a:hover,
-#touch-menu{
-	color: #FFFFFF;
-}
-#touch-menu{display: none;}
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+   margin: -20px 0;
+    }
 
 .hero{
  width: 100%;
-    height: 900px; 
+    height: 600px; 
     position: relative;
-    background: url('../images/log.jpg') no-repeat bottom center;
+    background: url('../images/hero.jpg') no-repeat bottom center;
     background-size: cover;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover; 
 }
 
-.hero .caption{
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    margin-top: -265px;
-    z-index: 10;
-}
+@media (max-width: 760px){
 
-.hero .caption h2{
-    color: #fff;
-    font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
-    font-size: 100px;
-    font-weight: lighter;
-    margin: 0;
-    position: relative;
-    display: block;
-}
-
-
-@media (max-width: 1000px){
-
-	.header{
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 100px;
-	}
-	.logo img{height: 40px;}
-	.nav {
-		position: absolute;
-		top: 100%;
-		left: 0;
-		right: 0;
-		display: none;}
-	.nav li {float: none;}
-
-	.nav li a {
-		color: #666;
-		border-top: 1px solid #eee;
-		border-left: 3px solid transparent;
-		background: #fff;
-	}
-	.nav li:first-child a {border-top: none;}
-	.nav li a:hover {
-		color: #333;
-		border-left: 3px solid #515572;
-		background: #f0f0f0;
-	}
-	#touch-menu{
-		display: block;
-		float: right;
-		font-size: 25px;
-		height: 50px;
-		padding: 45px 15px;
-		margin: -10px 0;
-	}
-	.project_list .project_item{
+  .project_list .project_item{
         width: 100%;
        text-align: center;
     }
 
-  
 }
 
+@media (max-width: 341px){
+  #custom-bootstrap-menu.navbar-default .navbar-brand {
+    margin: -70px 0;
+    width: 100%;  }
+}
 
 .description{
 	padding: 30px;
@@ -229,27 +145,27 @@ td {padding: 0px 0px 0px;}
   	padding-top: 10px;
   	font-size: 20px;
   }
-  .first  {
+
+  .list-unstyled ul {
 list-style: none;
 padding: 20px 60px;
 }
-.first li {
+.list-unstyled li {
 padding: 5px 40px;
 border: 4px inset;
 border-color: #3CB371 #2E8B57 #2E8B57  #3CB371 ;
 font-size: 20px;
 box-shadow: 0 5px 5px 0 rgba(0,0,0, .2); 
 margin-bottom: 5px;
-width: 60%;
+width: 100%;
+
 }
 .company_text .text5{
 text-indent: 1.5em; Отступ первой строки
   	text-align: justify;
   	margin-bottom: 30px;
 }
-/* .container{
-  padding-bottom: 50px
-}  */
+
 .project   {
 margin-top: 50px;
 text-align: center;
@@ -330,34 +246,17 @@ text-decoration-color: black;
     -moz-transition: all .2s linear;
     -o-transition: all .2s linear;
 }
-#contact{
-  padding-top: 20px;
+
+.footer-bottom {
+position: relative;
+  width: 100%;
+  margin:  auto;
+  margin-top: 30px;
+  float: left;
+  padding: 1%;
+  background-color: black;
+  border-bottom: 2px solid silver;
+  color: white;
 }
 
 
-
-/* .news {
-margin-top: 50px;
-text-align: center;
-text-decoration-color: black;
-}
-.news h1 a{
-
-  color: #000000;
-}
- */
-
-.footer {
-	position: relative;
-	width: 98%;
-	margin:  auto;
-	margin-top: 30px;
-	float: left;
-	padding: 1%;
-	background-color: black;
-	border-bottom: 2px solid silver;
-	color: white;
-}
-.footer a{
-	color: #FFFFFF;
-}
